@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Myntra Sign In Dropdown</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+/* Navbar */
+.navbar{
+  background:#fff;
+  display:flex;
+  justify-content:flex-end;
+  padding:15px 40px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile */
+.profile{
+  position:relative;
+}
+
+.profile>a{
+  text-decoration:none;
+  color:#000;
+  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* Dropdown */
+.profile-dropdown{
+  position:absolute;
+  top:130%;
+  right:0;
+  width:260px;
+  background:#fff;
+  border:1px solid #eaeaec;
+  box-shadow:0 4px 16px rgba(0,0,0,0.15);
+  display:none;
+  padding:15px;
+  z-index:100;
+}
+
+/* Show on hover */
+.profile:hover .profile-dropdown{
+  display:block;
+}
+
+/* Dropdown content */
+.profile-dropdown h4{
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.profile-dropdown p{
+  font-size:12px;
+  color:#535766;
+  margin-bottom:10px;
+}
+
+/* Sign In Button */
+.signin-btn{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  border:1px solid #ff3f6c;
+  color:#ff3f6c;
+  padding:8px;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.signin-btn:hover{
+  background:#ff3f6c;
+  color:#fff;
+}
+
+/* Links */
+.profile-dropdown a{
+  display:block;
+  text-decoration:none;
+  color:#3e4152;
+  font-size:13px;
+  padding:6px 0;
+}
+
+.profile-dropdown a:hover{
+  color:#ff3f6c;
+}
+
+/* Divider */
+.divider{
+  height:1px;
+  background:#eaeaec;
+  margin:10px 0;
+}
+</style>
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="profile">
+    <a>Profile</a>
+
+    <div class="profile-dropdown">
+      <h4>Welcome</h4>
+      <p>To access account and manage orders</p>
+
+      <a href="#" class="signin-btn">LOGIN / SIGNUP</a>
+
+      <div class="divider"></div>
+
+      <a href="#">Orders</a>
+      <a href="#">Wishlist</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Myntra Insider</a>
+    </div>
+  </div>
+</header>
+
+</body>
+</html>
